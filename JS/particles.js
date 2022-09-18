@@ -112,9 +112,20 @@ particlesJS(
 );
 let nombre = prompt('Hey, I would like you to feel comfortable on my page, for that you could tell me your name');
 let saludo = document.getElementsByClassName('nombre')
-console.log(saludo);
 if(nombre.length == 0){
     saludo[0].innerText = `Hello, my name is  Lucas Jaime, welcome to my portfolio!`;
 }else{
     saludo[0].innerText = `Hello ${nombre}, my name is  Lucas Jaime, welcome to my portfolio!`;
 }
+let btnParticles = document.getElementsByClassName('particlesInteract');
+let btn = document.getElementsByClassName('btn-interact');
+let particles0 = document.getElementById('particles-js');
+let particlesStatus 
+function changeParticles(){
+  particles0.classList.toggle('particlesClass0');
+  particles0.classList.toggle('particlesClass1')
+}
+btnParticles[0].addEventListener('click', ()=>{
+  // btn[0].classList.add('btn-interact0')
+  changeParticles();
+});
