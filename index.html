@@ -9,37 +9,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Mono&display=swap" rel="stylesheet">
-    
+    <link rel="icon" href="./Imagenes/LOGO.png">
 </head>
 <body>
+    <div id="mostrarIdiomas" class="idioma0">
+        <div class="closeIdiomas"><img src="./Imagenes/close.png" alt="close"></div>
+        <div class="btn-idiom">
+            <a href="./CV/Lucas Jaime CV English.pdf" download class="idiomaCV">Donwload in english</a>
+            <a href="./CV/Lucas Jaime Spanish.pdf" download class="idiomaCV">Donwload in spanish</a>
+        </div>
+    </div>
     <div id="particles-js" class="particlesClass0"></div>
         <header id="header">
             <img src="./Imagenes/LOGO.png" alt="LOGO">
-            <ul>
+            <ul class="menuV">
                 <li><a href="#main">About</a></li>
                 <li><a href="#nav">Tech skills</a></li>
                 <li><a href="#projects">Portfolio</a></li>
-                <li><a href="./CV/Lucas Jaime Spanish.pdf" download>Download CV</a></li>
+                <li><a class="CV">Download CV</a></li>
                 <li><a href="#footer">Contact</a></li>
             </ul>
+            <ul class="menuI"><li><img src="./Imagenes/menu-hamburguesa.png" alt="menu-hamburguesa"></li></ul>
         </header>
         <main id="main">
             <div class="presentation">
                 <h2 class="nombre">Hello, my name is  Lucas Jaime, welcome to my portfolio!</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, modi?</p>
+                <p>I am a frontend developer and IT security analyst waiting for a big challenge. Student of electronic engineering and physical sciences at the University of Buenos Aires and a great fan of chess</p>
             </div>
         </main>
     
         <nav id="nav">
             <div class="portfolio">
-                <div>
                     <h2>Tech skills</h2>
-                </div>
             </div>
             <div class="techSkills">
-                <img src="Imagenes/HTML.png" alt=""><input type="range" min="0" max="10" value="9" readonly onmousedown="return false;">
-                <img src="Imagenes/CSS.png" alt=""><input type="range" min="0" max="10" value="9" readonly onmousedown="return false;">
-                <img src="Imagenes/JS.png" alt=""><input type="range" min="0" max="10" value="7" readonly onmousedown="return false;">
+                <img src="Imagenes/html.png" alt="html"><input type="range" min="0" max="10" value="9" readonly onmousedown="return false;">
+                <img src="Imagenes/CSS.png" alt="css"><input type="range" min="0" max="10" value="9" readonly onmousedown="return false;">
+                <img src="Imagenes/JS.png" alt="js"><input type="range" min="0" max="10" value="7" readonly onmousedown="return false;">
+                <img src="Imagenes/bs.png" alt="bs"><input type="range" min="0" max="10" value="8" readonly onmousedown="return false;">
+                <img src="Imagenes/sass.png" alt="sass"><input type="range" min="0" max="10" value="8" readonly onmousedown="return false;">
             </div>
         </nav>
         <div id="projects">
@@ -62,7 +70,6 @@
             <a target="_blank" href="mailto:luuujaime@gmail.com"><img src="Imagenes/correo.png" alt="correo"></a>
             <a target="_blank" href="https://www.linkedin.com/in/lucas-jaime-86b780125/"><img src="Imagenes/linkedin.png" alt="linkedin"></a>
         </footer>
-    
     <!--ParticlesJS-->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="./JS/particles.js"></script>

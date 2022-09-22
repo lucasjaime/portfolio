@@ -110,22 +110,43 @@ particlesJS(
         "retina_detect": true
       }
 );
-let nombre = prompt('Hey, I would like you to feel comfortable on my page, for that you could tell me your name');
-let saludo = document.getElementsByClassName('nombre')
-if(nombre.length == 0){
-    saludo[0].innerText = `Hello, my name is  Lucas Jaime, welcome to my portfolio!`;
-}else{
-    saludo[0].innerText = `Hello ${nombre}, my name is  Lucas Jaime, welcome to my portfolio!`;
-}
+// let nombre = prompt('Hey, I would like you to feel comfortable on my page, for that you could tell me your name');
+// let saludo = document.getElementsByClassName('nombre')
+// if(nombre.length == 0){
+//     saludo[0].innerText = `Hello, my name is  Lucas Jaime, welcome to my portfolio!`;
+// }else{
+//     saludo[0].innerText = `Hello ${nombre}, my name is  Lucas Jaime, welcome to my portfolio!`;
+// }
 let btnParticles = document.getElementsByClassName('particlesInteract');
 let btn = document.getElementsByClassName('btn-interact');
 let particles0 = document.getElementById('particles-js');
-let particlesStatus 
+let menuHamburguesa = document.getElementsByClassName('menuI')
+let mostrarMenu = document.getElementsByClassName('menuV')
+let mostrarMenu0 = document.getElementsByClassName('menuV0')
+let idioma = document.getElementById('mostrarIdiomas')
+let CV = document.getElementsByClassName('CV')
+let closeIdiom = document.querySelectorAll('.closeIdiomas')
+
+closeIdiom[0].addEventListener(`click`, ()=> {
+  changeIdiom()
+})
+function changeIdiom(){
+  idioma.classList.toggle('idioma');
+  idioma.classList.toggle('idioma0');
+}
+CV[0].addEventListener('click', ()=>{
+  changeIdiom()
+})
+function changeMenu(){
+  mostrarMenu[0].classList.toggle('menuV0');
+}
+menuHamburguesa[0].addEventListener('click', ()=>{
+  changeMenu()
+})
 function changeParticles(){
   particles0.classList.toggle('particlesClass0');
   particles0.classList.toggle('particlesClass1')
 }
 btnParticles[0].addEventListener('click', ()=>{
-  // btn[0].classList.add('btn-interact0')
   changeParticles();
 });
