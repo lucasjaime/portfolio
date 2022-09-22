@@ -196,15 +196,14 @@ body{
 }
 #projects .projects-done a img{
     height: 24vh;
-    border-radius: 10%;
+    border-radius: 30px;
     transition: 0.3s;
-    box-shadow: 7px 4px 35px rgba(255, 255, 255, 0.169);
+    filter: drop-shadow(7px 7px 10px rgba(0, 0, 0, 0.411));
 }
 #projects .projects-done a img:hover{
-    /* opacity: 0.9; */
     filter: brightness(0.8);
     transition: 0.3s;
-    box-shadow: 10px 5px 10px rgb(0, 0, 0);
+    filter: drop-shadow(7px 7px 10px rgb(0, 0, 0));
 }
 #footer{
     background-color: black;
@@ -482,7 +481,7 @@ body{
         padding: 2vh;
     }
     .idioma .btn-idiom{
-        padding: 9vh;
+        padding: 12vh;
     }
     
 }
