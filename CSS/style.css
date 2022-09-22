@@ -20,6 +20,7 @@ body::-webkit-scrollbar-thumb {
 }
 body{
     user-select: none;
+    background-color: rgb(161 166 189 / 35%);
 }
 #header{
     padding: 0.3% 3% 0.4% 7%;
@@ -364,6 +365,7 @@ body{
         width: 100%;
         padding: 3vh;
         background-color: rgba(0, 0, 0, 0.89);
+        font-size: 2.2vh;
     }
     #header .menuV0 a:hover:before{
         animation: none;
@@ -395,11 +397,7 @@ body{
     }
 }
 @media (max-width:740px){
-    #projects .projects-done-tittle{
-        font-size: 1.5vh;
-    }
     #main .presentation{
-        font-size: 1.5vh;
         padding: 2vh;
     }
     #header img{
@@ -407,7 +405,6 @@ body{
     }
     #nav .portfolio{
         height: 15vh;
-        font-size: 1.5vh;
     }
     #nav .techSkills img{
         height: 5vh;
@@ -416,9 +413,22 @@ body{
         margin-top: 50vh;
     }
     #particles .particlesInteract{
-        font-size: 1.5vh;
         padding: 3vh;
     }
+    .idioma{
+        display: grid;
+        gap: 0;
+        justify-content: start;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .idioma .closeIdiomas{
+        padding: 5vh;
+    }
+    .idioma .btn-idiom{
+        padding: 16vh;
+    }
+    
 }
 @media (max-width:600px){
     #main .presentation{
@@ -429,10 +439,10 @@ body{
         align-items: center;
     }
     #header img{
-        height: 6vh;
+        height: 9vh;
     }
     #header .menuI img{
-        height: 3.5vh;
+        height: 5vh;
     }
     #projects .projects-done a img{
         height: 15vh;
@@ -442,13 +452,15 @@ body{
     }
 }
 @media (max-width:550px){
-    
     #nav .techSkills{
         margin: 0;
         width: 100%;
     }
+    #nav .techSkills img{
+        height: 7vh;
+    }
     #projects{
-        margin: 50vh 0;
+        margin: 55vh 0;
         margin-bottom: 10vh;
     }
     #projects .projects-done-tittle{
@@ -462,9 +474,27 @@ body{
         height: 20vh;
     }
 }
+@media (max-width:450px){
+    #main .presentation{
+        font-size: 1.8vh;
+    }
+    .idioma .closeIdiomas{
+        padding: 2vh;
+    }
+    .idioma .btn-idiom{
+        padding: 9vh;
+    }
+    
+}
 @media (max-width:370px){
     #main .presentation{
         font-size: 1.28vh;
+    }
+    .idioma .closeIdiomas{
+        padding: 2vh;
+    }
+    .idioma .btn-idiom{
+        padding: 5vh;
     }
 }
 @media (max-width:310px){
