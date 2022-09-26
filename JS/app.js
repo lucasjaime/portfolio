@@ -110,7 +110,7 @@ particlesJS(
         "retina_detect": true
       }
 );
-let nombre = prompt('Hey, I would like you to feel comfortable on my page, for that you could tell me your name');
+let nombre = prompt("Hey!! what's up, whats your name?");
 let saludo = document.getElementsByClassName('nombre')
 let btnParticles = document.getElementsByClassName('particlesInteract');
 let btn = document.getElementsByClassName('btn-interact');
