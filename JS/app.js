@@ -156,6 +156,15 @@ function changeParticles(){
 }
 btnParticles[0].addEventListener('click', ()=>{
   changeParticles();
+  Swal.fire({
+    title: 'You activated the particles',
+    showClass: {
+      popup: 'animate__animated animate__fadeInDown'
+    },
+    hideClass: {
+      popup: 'animate__animated animate__fadeOutUp'
+    }
+  })
 });
 if(nombre.length == 0){
   saludo[0].innerText = `Hello, my name is  Lucas Jaime, welcome to my portfolio!`;
