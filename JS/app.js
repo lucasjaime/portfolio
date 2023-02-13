@@ -115,14 +115,15 @@ let saludo = document.getElementsByClassName('nombre')
 let btnParticles = document.getElementsByClassName('particlesInteract');
 let btn = document.getElementsByClassName('btn-interact');
 let particles0 = document.getElementById('particles-js');
-let menuHamburguesa = document.getElementsByClassName('menuI')
-let mostrarMenu = document.getElementsByClassName('menuV')
-let mostrarMenu0 = document.getElementsByClassName('menuV0')
-let idioma = document.getElementById('mostrarIdiomas')
-let CV = document.getElementsByClassName('CV')
-let closeIdiom = document.querySelectorAll('.closeIdiomas')
-let idiomaCV = document.getElementsByClassName('idiomaCV')
-let closeMenu = document.getElementsByClassName('closeMenu')
+let menuHamburguesa = document.getElementsByClassName('menuI');
+let mostrarMenu = document.getElementsByClassName('menuV');
+let mostrarMenu0 = document.getElementsByClassName('menuV0');
+let idioma = document.getElementById('mostrarIdiomas');
+let CV = document.getElementsByClassName('CV');
+let closeIdiom = document.querySelectorAll('.closeIdiomas');
+let idiomaCV = document.getElementsByClassName('idiomaCV');
+let closeMenu = document.getElementsByClassName('closeMenu');
+
 
 for (let i = 0; i < closeMenu.length; i++) {
   closeMenu[i].addEventListener('click', ()=>{
@@ -156,15 +157,6 @@ function changeParticles(){
 }
 btnParticles[0].addEventListener('click', ()=>{
   changeParticles();
-  Swal.fire({
-    title: 'You activated the particles',
-    showClass: {
-      popup: 'animate__animated animate__fadeInDown'
-    },
-    hideClass: {
-      popup: 'animate__animated animate__fadeOutUp'
-    }
-  })
 });
 if(nombre.length == 0){
   saludo[0].innerText = `Hello, my name is  Lucas Jaime, welcome to my portfolio!`;
